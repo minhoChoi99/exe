@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto; /*0 : 상하 / auto: 좌우 / 를 가운데 고정*/
+  color: #3f464d;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.inner {
+  /*header,section의 구성요소를 담는 전체적인 부분*/
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.head-container .left-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.head-container .right-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.head-container .mid-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(211, 94, 94);
+}
+
+.head-container {
+  display: flex;
+  align-items: center;
+  line-height: 2.5;
+  justify-content: space-between;
+}
+
+a {
+  all: unset;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+.head-container .left-title a:hover {
+  cursor: pointer;
+  color: turquoise;
+}
+
+.head-container .right-title a:hover {
+  cursor: pointer;
+  color: turquoise;
+}
+
+section {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+}
+
+.main {
+  margin-top: 60px;
+  height: 250px;
+  background-image: url("/img/girl.jpg");
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-color: rgb(211, 164, 209);
+  z-index: 1;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.main-container .main-sub {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: aquamarine;
+}
+.main-container .main-subs {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: rgb(111, 212, 80);
+}
+.main-container .main-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.slide-main {
+  margin-top: 20px;
+}
+
+.slide-box {
+  width: 250px;
+  height: 200px;
+  border: black;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-container .Member-sub {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: chartreuse;
+}
+
+.arrow-container .slide-prev {
+  font-size: 1.7rem;
+}
+
+.arrow-container .slide-prev:hover {
+  color: aquamarine;
+}
+
+.arrow-container .slide-next {
+  font-size: 1.7rem;
+}
+
+.arrow-container .slide-next:hover {
+  color: aquamarine;
+}
+
+ul {
+  margin-top: 30px;
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+  overflow: none;
+  transition: 0.4s;
+}
+
+.Member-card {
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Member-card-container {
+  transition: 0.4s;
+}
+
+.class-card {
+  width: 240px; /*크로스 브라우징*/
+  box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2); /*오른쪽,위로밀기,뿌려짐효과,확대*/
+  border-radius: 5px;
+  margin: 0 10px;
+  border: 1px;
+
+  flex-shrink: 0; /*크로스 브라우징*/
+  padding: 0 auto;
+}
+
+.class-card:hover {
+  transition: 0.2s;
+  transform: translateY(-5px);
+}
+
+.class-card_sub:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+.Member-card-container {
+  display: flex;
+  transition: 0.4s;
+}
+
+.class-card_img img {
+  width: 240px;
+  height: 180px;
+}
+
+.class-card_sub {
+  margin: 5px 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    min-width: 1200px;
+  }
+}
+
+.Eunha-sub {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #3f464d;
+  justify-content: center;
+  margin: 0 auto;
+  display: none;
+}
+
+.extend-euneun {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url(/img/eunha.jpg);
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.extend-eunha {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.sinbi-sub {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #3f464d;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: none;
+}
+
+.sub {
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.extend-sinsin {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url(/img/sinbi.jpg);
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.extend-sinbi {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.umji-sub {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #3f464d;
+  justify-content: center;
+  margin: 0 auto;
+  display: none;
+}
+
+.extend-umjiji {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url(/img/umji.jpg);
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.extend-umji {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 10px auto;
+}
+
+a:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+.slideimg-cnt {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.slidebtn {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  display: flex;
+}
+
+.eunhaimg {
+  width: 400px;
+  height: 300px;
+  background-image: url(/img/eunha.jpg);
+  background-size: 400px 300px;
+}
+
+.sinbiimg {
+  width: 400px;
+  height: 300px;
+  background-image: url(/img/sinbi.jpg);
+  background-size: 400px 300px;
+}
+.sowonimg {
+  width: 400px;
+  height: 300px;
+  background-image: url(/img/sowon.jpg);
+  background-size: 400px 300px;
+}
+.umjiimg {
+  width: 400px;
+  height: 300px;
+  background-image: url(/img/umji.jpg);
+  background-size: 400px 300px;
+}
+.yujuimg {
+  width: 400px;
+  height: 300px;
+  background-image: url(/img/yuju.jpg);
+  background-size: 400px 300px;
+}
+.yerinimg {
+  width: 400px;
+  height: 300px;
+  background-image: url(/img/yerin.jpg);
+  background-size: 400px 300px;
+}

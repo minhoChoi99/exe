@@ -1,0 +1,37 @@
+.web {
+  text-decoration: underline;
+  color: blue;
+}
+
+.web:hover {
+  cursor: pointer;
+}
+
+.webdiv {
+  display: none;
+}
+
+.htmldiv {
+  display: none;
+}
+
+.cssiv {
+  display: none;
+}
+
+.jsdiv {
+  display: none;
+}
+
+li {
+  text-decoration: underline;
+}
+
+li:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+.aas {
+  display: none;
+}

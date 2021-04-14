@@ -1,0 +1,14 @@
+.container {
+  width: 400px;
+  overflow: hidden;
+  display: flex;
+  transition: 0.4s;
+}
+.inner {
+  width: 400px;
+  transition: 0.4s;
+}
+.inner img {
+  width: 400px;
+  height: 400px;
+}

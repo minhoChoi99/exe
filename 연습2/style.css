@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto; /*0 : 상하 / auto: 좌우 / 를 가운데 고정*/
+  color: #3f464d;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+.header-logo {
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  background-image: url("/연습2/img/dae.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.header-slide {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(63, 75, 182);
+}
+
+a {
+  text-decoration: none;
+  all: unset;
+  font-size: 1.3rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  cursor: pointer;
+  background-color: tomato;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+li {
+  margin-right: 40px;
+}
+
+.slidebar {
+  display: flex;
+  width: 100%;
+  height: 220px;
+  z-index: 1;
+  background-color: rgba(239, 239, 241, 0.788);
+}
